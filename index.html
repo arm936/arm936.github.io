@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake game</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="button-container">
+        <button onclick="playAudio()">
+            <img src="./audio_5225800.png" alt="" srcset="" height="85" width="70">
+        </button>
+        <button onclick="pauseAudio()">
+            <img src="./Volume_Off-512.webp" alt="" srcset="" height="85" width="70">
+        </button>
+    </div>
+    <div>
+        <div class="scores">
+            <h1 id="score">000</h1>
+            <h1 id="highscore">000</h1>
+        </div>
+
+        <div class="game-border-1">
+            <div class="game-border-2">
+                <div class="game-border-3">
+                    <div id="game-board"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="myAudio">
+        <source src="mixkit-game-level-music-689.wav" type="audio/mpeg">
+
+    </audio>
+    <h1 id="instraction-text">Press specebar to start the game</h1>
+    <img id="logo" src="./360_F_576003374_XZFmOGrFu0Tp38HCIEkLBMwPixlSAc3k.jpg" alt="snake image" height="265"
+        width="330">
+    <script src="./script.js"></script>
+</body>
+
+</html>
